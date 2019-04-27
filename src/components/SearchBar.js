@@ -4,11 +4,11 @@ import React from 'react';
 class SearchBar extends React.Component {
     state = { term: ''};
 
-    onFormSubmit(event) {
+    onFormSubmit = (event) => {
         //Prevents browser from submitted the form when pressing enter
         event.preventDefault();
-        //console.log(this.state.term);
-    }
+        console.log(this.state.term);
+    };
     render() {
         return ( 
         <div className="ui segment">
